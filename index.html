@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grids</title>
+    <style>
+        /* Grid system will follow the same template no matter what (70% 30%) will be assigned */
+        .wrapper {
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            grid-column-gap: 1em;
+            grid-row-gap:1em;
+        }
+        .wrapper > div{
+            background: #eeeeee;
+            padding: 1em;
+        }
+        /* every other element in the div will have different shade */
+         .wrapper > div:nth-child(odd){
+             background: #ddd;
+         }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam blanditiis voluptatem aliquid odio obcaecati enim fugit, fugiat architecto deleniti voluptatum reprehenderit unde amet natus repellat commodi libero, ipsa deserunt ut sit officiis minus consectetur, perspiciatis ratione. Voluptatum pariatur consequuntur repudiandae nobis necessitatibus. Eos, quibusdam. Quas fugit totam ut nemo provident temporibus soluta similique dolorum minima eaque. Est optio eaque, suscipit deleniti assumenda perspiciatis distinctio laborum voluptas ut earum voluptate minima deserunt. Quia aliquam, amet soluta neque expedita enim distinctio nobis!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati quod consequuntur laboriosam libero animi iusto eveniet ratione eaque similique accusamus odit, quae totam incidunt nulla. Minima quaerat velit aliquam!
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam blanditiis voluptatem aliquid odio obcaecati enim fugit,
+            fugiat architecto deleniti voluptatum reprehenderit unde amet natus repellat commodi libero, ipsa deserunt ut sit officiis
+            minus consectetur, perspiciatis ratione. Voluptatum pariatur consequuntur repudiandae nobis necessitatibus. Eos, quibusdam.
+            Quas fugit totam ut nemo provident temporibus soluta similique dolorum minima eaque. Est optio eaque, suscipit deleniti
+            assumenda perspiciatis distinctio laborum voluptas ut earum voluptate minima deserunt. Quia aliquam, amet soluta neque
+            expedita enim distinctio nobis!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati quod consequuntur laboriosam libero animi iusto
+            eveniet ratione eaque similique accusamus odit, quae totam incidunt nulla. Minima quaerat velit aliquam!
+        </div>
+    </div>
+</body>
+</html>
